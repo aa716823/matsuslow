@@ -8,7 +8,7 @@ const activities = [
     icon: MapPin,
     color: 'from-sky-400 to-blue-500',
     description: '走訪六大亮點，收集專屬的島嶼記憶',
-    url: '#'
+    url: 'collection'
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const activities = [
     icon: Moon,
     color: 'from-slate-600 to-blue-700',
     description: '夜幕低垂時，與星空和藍眼淚相遇',
-    url: '#'
+    url: '/nightexplore'
   },
   {
     id: 4,

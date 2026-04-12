@@ -18,10 +18,10 @@ export default function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">活動單位</h4>
             <ul className="space-y-2 text-blue-200">
-              <li><a href="#" className="hover:text-white transition-colors">交通部觀光署</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">台灣觀光 100 亮點</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">連江縣交通旅遊局</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">接受交通部觀光屬補助 [廣告]</a></li>
+              <li><span className="hover:text-white transition-colors">交通部觀光署</span></li>
+              <li><span className="hover:text-white transition-colors">台灣觀光 100 亮點</span></li>
+              <li><span className="hover:text-white transition-colors">連江縣交通旅遊局</span></li>
+              <li><span className="hover:text-white transition-colors">接受交通部觀光屬補助 [廣告]</span></li>
             </ul>
           </div>
 
