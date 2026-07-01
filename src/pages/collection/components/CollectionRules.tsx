@@ -1,10 +1,10 @@
 import { ShieldCheck } from 'lucide-react';
 
 const rules = [
-  '每人每點限兌換一次',
-  '不得重複領取、轉售或以不正當方式取得',
-  '原則不得代領；團體旅客得由領隊統一辦理',
-  '兌換資格以現場查驗紀錄及可辨識資料為準',
+  '指定貼文留言畫面',
+  '留言中上傳之打卡照片',
+  '本人身分證明文件',
+  '馬祖旅遊證明',
 ];
 
 export default function CollectionRules() {
@@ -21,6 +21,10 @@ export default function CollectionRules() {
         <div className="h-px bg-gradient-to-r from-blue-500 to-transparent mb-8" />
 
         <div className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-10">
+          <div className="mb-6">
+            <h3 className="text-white font-bold text-xl md:text-2xl mb-1">出示驗證資料</h3>
+            <p className="text-blue-300 text-sm">請向現場工作人員出示以下內容：</p>
+          </div>
           <ul className="space-y-4">
             {rules.map((rule, i) => (
               <li key={i} className="flex items-start gap-4 text-blue-100 leading-relaxed">

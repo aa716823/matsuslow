@@ -1,20 +1,30 @@
 import { Store } from 'lucide-react';
 
-const shops = [
+const categories = [
   {
-    no: '01',
-    name: '芹壁地中海民宿',
-    desc: '面海而居的石屋住宿空間，保留聚落風貌，也讓旅人在停留之間感受芹壁的慢節奏。',
+    label: '餐飲',
+    items: [
+      '芹壁休閒渡假村', '芹境飲食店(芹沃咖啡)', '芹壁愛情海',
+      '芹壁家適海景民宿', '雲記商店', '芹壁水漾民宿(預約)',
+      '鏡沃小吃店', '花草間咖啡坊', '蔚在行工作室',
+    ],
   },
   {
-    no: '02',
-    name: '海風小食堂',
-    desc: '提供在地風味餐點與輕食，是散步途中適合停下來坐坐的小店。',
-  },
-  {
-    no: '03',
-    name: '慢慢咖啡',
-    desc: '結合住宿與旅行體驗的空間，讓旅人用更慢的方式進入北竿的生活節奏。',
+    label: '民宿',
+    items: [
+      '芹壁休閒渡假村', '芹壁地中海民宿', '家適咖啡.民宿',
+      '梅好石屋', '芹壁愛情海', '家適咖啡.民宿2館',
+      '家適咖啡.民宿3館', '芹壁愛情海2館', '芹壁德順號民宿',
+      '芹壁德順號民宿2館', '溫馨民宿', '悠活23海景民宿',
+      '芹壁家適海景民宿', '芹壁愛情海3館', '芹壁老時光',
+      '芹壁老時光2館', '芹壁水漾', '芹壁幸福海岸民宿',
+      '幸福海岸民宿2館', '芹壁幸福海岸民宿3館', '芹壁休閒渡假村二館',
+      '芹壁村25號民宿', '芹壁村25號之老村長的漁寮', '美芹居',
+      '愛芹小築', '芹壁青年民宿', '芹壁山莊',
+      '小玫窩民宿', '小玫窩民宿二館', '芹壁榕樹下民宿',
+      '芹壁背包客棧', '芹壁五家村民宿', '芹壁山城民宿',
+      '芹壁山城民宿2館', '靜園海岸', '芹壁望海樓民宿',
+    ],
   },
 ];
 
@@ -36,13 +46,23 @@ export default function ChinbiShops() {
             《芹壁慢慢走・鷗霸夥伴行動》以北竿芹壁聚落為主場域，串聯在地合作店家、民宿與聚落空間，邀請旅人透過停留、消費與散步，感受芹壁獨有的石屋風景、聚落紋理與生活節奏。活動期間內，旅客可於合作店家參與消費兌換，收集限定的鷗霸夥伴徽章，讓每一次停留，都成為旅途中被記住的一部分。
           </p>
 
-          <div className="space-y-4">
-            {shops.map((shop) => (
-              <div key={shop.no} className="flex gap-5 p-5 bg-white/5 border border-white/10 rounded-2xl">
-                <span className="text-amber-400 font-bold text-lg flex-shrink-0">{shop.no}</span>
-                <div>
-                  <p className="text-white font-semibold mb-1">{shop.name}</p>
-                  <p className="text-amber-100 text-sm leading-relaxed">{shop.desc}</p>
+          <div className="overflow-hidden rounded-2xl border border-white/10">
+            {categories.map((cat) => (
+              <div key={cat.label}>
+                {/* 類別標題列 */}
+                <div className="bg-amber-800/50 text-amber-100 text-center text-sm font-semibold py-2 tracking-widest border-b border-white/10">
+                  {cat.label}
+                </div>
+                {/* 店家 3 欄網格 */}
+                <div className="grid grid-cols-3">
+                  {cat.items.map((name, i) => (
+                    <div
+                      key={i}
+                      className={`px-4 py-3 text-amber-100 text-sm border-b border-white/10 border-r last:border-r-0 [&:nth-child(3n)]:border-r-0 ${i % 3 === 0 ? 'bg-amber-800/50' : ''}`}
+                    >
+                      {name}
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}

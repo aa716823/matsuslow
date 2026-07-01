@@ -16,11 +16,11 @@ export default function CollectionTime() {
         <div className="grid sm:grid-cols-2 gap-6">
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
             <p className="text-cyan-400 text-sm font-medium tracking-widest uppercase mb-3">活動時間</p>
-            <p className="text-2xl font-bold text-white"><span className="text-4xl">2026</span> 年 5 月 1 日 - 7 月 31 日</p>
+            <p className="text-2xl font-bold text-white"><span className="text-4xl">2026</span> 年 5 月 11 日 - 7 月 31 日</p>
           </div>
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
             <p className="text-blue-400 text-sm font-medium tracking-widest uppercase mb-3">兌換時間</p>
-            <p className="text-2xl font-bold text-white"><span className="text-4xl">2026</span> 年 5 月 1 日 - 8 月 9 日</p>
+            <p className="text-2xl font-bold text-white"><span className="text-4xl">2026</span> 年 5 月 11 日 - 8 月 9 日</p>
           </div>
         </div>
       </div>

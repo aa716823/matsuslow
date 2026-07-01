@@ -12,6 +12,9 @@ import CameraPage from './pages/camera/CameraPage';
 import NightExplorePage from './pages/nightexplore/NightExplorePage';
 import CollectionPage from './pages/collection/CollectionPage';
 import ChinbiPage from './pages/chinbi/ChinbiPage';
+import MarketPage from './pages/market/MarketPage';
+import DiyPage from './pages/diy/DiyPage';
+import MediaPage from './pages/media/MediaPage';
 
 function Home() {
   return (
@@ -38,6 +41,9 @@ function App() {
         <Route path="/nightexplore" element={<NightExplorePage />} />
         <Route path="/collection" element={<CollectionPage />} />
         <Route path="/chinbi" element={<ChinbiPage />} />
+        <Route path="/market" element={<MarketPage />} />
+        <Route path="/workshop" element={<DiyPage />} />
+        <Route path="/media" element={<MediaPage />} />
       </Routes>
     </BrowserRouter>
   );

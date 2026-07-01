@@ -1,4 +1,4 @@
-import { Users } from 'lucide-react';
+import { Users, CheckCircle } from 'lucide-react';
 
 export default function CollectionGroup() {
   return (
@@ -13,9 +13,20 @@ export default function CollectionGroup() {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">團體旅客參與方式</h2>
         <div className="h-px bg-gradient-to-r from-cyan-500 to-transparent mb-8" />
 
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-10">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-10 space-y-5">
           <p className="text-blue-100 leading-relaxed">
-            團體旅客可由導遊或領隊統一協助完成打卡及兌換，並須提供團體相關證明文件。
+            團體旅客可由導遊或領隊統一辦理兌換，請備妥：
+          </p>
+          <ul className="space-y-3">
+            {['團體成員打卡照片及留言資料', '團體名冊或行程資料'].map((item, i) => (
+              <li key={i} className="flex items-center gap-3 text-blue-100 font-medium">
+                <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                {item}
+              </li>
+            ))}
+          </ul>
+          <p className="text-blue-100 leading-relaxed">
+            團體旅客各成員仍須符合活動規定，並以現場查驗通過為準。
           </p>
         </div>
       </div>

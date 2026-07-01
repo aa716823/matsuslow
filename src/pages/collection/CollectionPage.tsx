@@ -10,6 +10,7 @@ import CollectionRedeem from './components/CollectionRedeem';
 import CollectionPrize from './components/CollectionPrize';
 import CollectionRules from './components/CollectionRules';
 import CollectionGroup from './components/CollectionGroup';
+import CollectionVideos from './components/CollectionVideos';
 
 export default function CollectionPage() {
   return (
@@ -24,6 +25,7 @@ export default function CollectionPage() {
       <CollectionPrize />
       <CollectionRules />
       <CollectionGroup />
+      <CollectionVideos />
       <Organization />
       <Footer />
     </div>

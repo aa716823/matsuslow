@@ -16,7 +16,7 @@ const activities = [
     icon: Users,
     color: 'from-cyan-400 to-teal-500',
     description: '漫步聚落巷弄，感受時光靜止的美好',
-    url: '#'
+    url: 'chinbi'
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const activities = [
     icon: Music,
     color: 'from-blue-400 to-cyan-500',
     description: '在市集與音樂中，品味島嶼的聲音',
-    url: '#'
+    url: '/market'
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ const activities = [
     icon: Palette,
     color: 'from-teal-400 to-emerald-500',
     description: '親手創作，把馬祖的溫度帶回家',
-    url: '#'
+    url: '/workshop'
   }
 ];
 

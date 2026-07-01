@@ -1,4 +1,5 @@
 import { MapPin } from 'lucide-react';
+import mapImg from '../../../assets/map_02.png';
 
 const spots = [
   {
@@ -44,9 +45,9 @@ export default function ChinbiRoute() {
           北竿以石屋聚落與壯麗海岸聞名，保留完整閩東建築與戰地文化。跟著我一起沿著海岸與村落漫步，感受傳統生活與歷史痕跡交織，是體驗馬祖風景與人文的重要島嶼哦～
         </p>
 
-        {/* 地圖佔位 */}
-        <div className="bg-white/5 border border-dashed border-white/20 rounded-3xl p-12 flex items-center justify-center mb-10">
-          <p className="text-white/30 text-sm">北竿地圖（待補）</p>
+        {/* 地圖 */}
+        <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden mb-10">
+          <img src={mapImg} alt="北竿地圖" className="w-full object-cover" />
         </div>
 
         <div className="space-y-4">

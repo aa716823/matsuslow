@@ -1,4 +1,5 @@
 import { Medal } from 'lucide-react';
+import badgeImg from '../../../assets/badge.png';
 
 const redeemSteps = [
   '於合作店家完成消費或住宿',
@@ -26,10 +27,14 @@ export default function ChinbiBadge() {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">慢慢走，也慢慢收集</h2>
         <div className="h-px bg-gradient-to-r from-orange-500 to-transparent mb-8" />
 
-        <p className="text-amber-100 leading-relaxed mb-8">
+        <p className="text-amber-100 leading-relaxed mb-6">
           活動期間於北竿芹壁聚落合作店家消費或住宿，即可參與《芹壁慢慢走・鷗霸夥伴行動》。符合條件者，可兌換
           <span className="text-white font-semibold"> 鷗霸夥伴徽章乙枚</span>。
         </p>
+
+        <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden mb-8">
+          <img src={badgeImg} alt="鷗霸夥伴徽章" className="w-full object-cover" />
+        </div>
 
         <div className="grid sm:grid-cols-2 gap-6">
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8">

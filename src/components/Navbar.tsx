@@ -31,9 +31,9 @@ export default function Navbar() {
     { id: 1, label: '慢島時間收集・鷗霸拼圖行動', href: '/collection', route: '/collection' },
     { id: 2, label: '芹壁慢慢走・鷗霸夥伴行動', href: '/chinbi', route: '/chinbi' },
     { id: 3, label: '慢島夜行・追星追淚體驗', href: '/nightexplore', route: '/nightexplore' },
-    { id: 4, label: '藍調時光市集－慢語時光', href: '#market', route: null },
-    { id: 5, label: '藍調手作體驗所', href: '#workshop', route: null },
-    { id: 6, label: '影音專區', href: '#media', route: null },
+    { id: 4, label: '藍調時光市集－慢語時光', href: '/market', route: '/market' },
+    { id: 5, label: '藍調手作體驗所', href: '/workshop', route: '/workshop' },
+    { id: 6, label: '影音專區', href: '/media', route: '/media' },
   ];
 
   const getItemClass = (item: typeof menuItems[0]) => {

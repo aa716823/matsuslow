@@ -1,4 +1,5 @@
 import { MapPin } from 'lucide-react';
+import mapImg from '../../../assets/map_01.svg';
 
 const spots = [
   { name: '大坵島', island: '島嶼' },
@@ -22,9 +23,9 @@ export default function CollectionSpots() {
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">六大亮點打卡地點</h2>
         <div className="h-px bg-gradient-to-r from-blue-500 to-transparent mb-8" />
 
-        {/* 地圖佔位 */}
-        <div className="bg-white/5 border border-dashed border-white/20 rounded-3xl p-12 flex items-center justify-center mb-8">
-          <p className="text-white/30 text-sm">地圖圖片（待補）</p>
+        {/* 地圖 */}
+        <div className="bg-white/5 border border-white/10 rounded-2xl  overflow-hidden mb-8">
+          <img src={mapImg} alt="六大亮點地圖" className="w-full object-cover" />
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
